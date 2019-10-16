@@ -1,0 +1,30 @@
+public class Test {
+    public static int add(int x,int y){
+        return x+y;
+    }
+    public static int sub(int x,int y){
+        return x-y;
+    }
+    public static int mul(int x,int y){
+        return x*y;
+    }
+    public static int dev(int x,int y){
+        return x/y;
+    }
+    public static int mod(int x,int y){
+        return x%y;
+    }
+
+    public static void main(String[] args) {
+        int resultA = add(1,2);
+        int resultB = sub(3,4);
+        int resultC = mul(5,6);
+        int resultD = dev(8,5);
+        int resultE = mod(7,3);
+        System.out.println("resultA:" + resultA);
+        System.out.println("resultB:" + resultB);
+        System.out.println("resultC:" + resultC);
+        System.out.println("resultD:" + resultD);
+        System.out.println("resultE:" + resultE);
+    }
+}
