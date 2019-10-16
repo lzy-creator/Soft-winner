@@ -1,0 +1,43 @@
+package 软通培训.第一天;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class hhh2 {
+    public static void main(String[] args) {
+        int n = 0;
+        System.out.println(欢迎来到猜字游戏);
+        Random r = new Random();
+        int re = r.nextInt(10);
+        while (n  3) {
+            System.out.println(请输入一个数值);
+            Scanner num = new Scanner(System.in);
+            int b = num.nextInt();
+            if (b  re) {
+                System.out.println(您输入的值小了,);
+            } else if (b  re) {
+                System.out.println(您输入的值大了，);
+            } else {
+                System.out.println(太棒了！你输入对了！);
+            }
+            n = n + 1;
+            if (n == 3) {
+                int game;
+                System.out.println(是否再玩一次 10);
+                Scanner sca = new Scanner(System.in);
+                game = sca.nextInt();
+                if (game == 1) {
+                    System.out.println(欢迎你下次再来);
+                } else if (game == 0) {
+                    System.out.println();
+                    n = 0;
+                    System.out.println(欢迎来到猜字游戏);
+                     re = r.nextInt(10);
+
+                }
+
+            }
+
+        }
+    }
+}
